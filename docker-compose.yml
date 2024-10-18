@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.8'  # Optional, but you can remove it to avoid the warning
 
 services:
   frontend:
@@ -6,7 +6,7 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
     ports:
-      - "8080:80"
+      - "8080:80"  # Map port 80 inside the container to port 8080 on your host
     networks:
       - medilearn-network
 
@@ -15,7 +15,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "3000:3000"  # Map port 3000 inside the container to port 3000 on your host
     networks:
       - medilearn-network
 
