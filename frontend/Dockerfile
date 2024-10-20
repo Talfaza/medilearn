@@ -7,11 +7,12 @@ COPY package*.json ./
 RUN npm install
 
 COPY . .
-RUN npm install -g http-server
-RUN npm run build
-RUN cd dist ;http-server .
 
-CMD ["npx", "serve", "dist"]
+RUN npm install -g serve 
+
+RUN npm run build
+
+CMD ["serve", "-s", "dist"] 
 
 EXPOSE 80
 
