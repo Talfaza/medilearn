@@ -5,7 +5,7 @@ services:
     build:
       context: ./frontend
     ports:
-      - "8080:80" 
+      - "3332:80" 
     networks:
       - medilearn-network
 
