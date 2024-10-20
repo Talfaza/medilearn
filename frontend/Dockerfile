@@ -7,7 +7,7 @@ COPY package*.json ./
 RUN npm install
 
 COPY . .
-
+RUN npm install -g http-server
 RUN npm run build
 RUN cd dist ;http-server .
 
