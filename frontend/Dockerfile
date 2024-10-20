@@ -12,7 +12,6 @@ RUN npm install -g serve
 
 RUN npm run build
 
-CMD ["serve", "-s", "dist"] 
-
+CMD ["npx", "serve", "-l", "80", "dist"]
 EXPOSE 80
 
