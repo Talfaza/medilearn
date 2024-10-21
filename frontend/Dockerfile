@@ -14,4 +14,3 @@ RUN npm run build
 
 CMD ["npx", "serve", "-l", "80", "dist"]
 EXPOSE 80
-
