@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import Nav from './components/Nav.vue'  
 </script>
 
 <template>
-  <HelloWorld />
+  <Nav />
+
 </template>
 
 <style scoped>
